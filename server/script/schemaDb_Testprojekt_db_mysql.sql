@@ -73,4 +73,7 @@ INSERT INTO `testprojekt_db`.`roles` (`role`, `_user`, `_id`) VALUES ('ADMIN', '
 
 
 
+-- relation 1:m bereich Tool - Bereich
+ALTER TABLE `tool` ADD COLUMN `bereich` int(11)  REFERENCES bereich(_id);
+
 

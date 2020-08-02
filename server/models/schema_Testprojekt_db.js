@@ -45,10 +45,18 @@ export default init => {
       },
       
       //RELATIONS
+        
       
       
       //EXTERNAL RELATIONS
       /*
+      bereich: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: Tool,
+          key: '_id',
+        }
+      },
       */
     },
       { sequelize, tableName: "bereich", timestamps: false }
@@ -80,6 +88,14 @@ export default init => {
       },
       
       //RELATIONS
+        
+      bereich:  {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Bereich",
+          key: '_id',
+        },
+      },
       
       
       //EXTERNAL RELATIONS

@@ -67,3 +67,6 @@ INSERT INTO "roles" (role, _user, _id) VALUES ('ADMIN', '1', 1);
 
 
 
+
+-- relation 1:m bereich Tool - Bereich
+ALTER TABLE tool ADD COLUMN bereich INTEGER  REFERENCES "bereich"(_id);

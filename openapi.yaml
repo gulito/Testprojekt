@@ -615,7 +615,12 @@ components:
           x-skaffolder-id-attr: 5f26a93d612fa03a28469d65
           x-skaffolder-type: String
           x-skaffolder-required: true
-      x-skaffolder-relations: 
+      x-skaffolder-relations:
+        bereich:
+          x-skaffolder-id: 5f26ab15612fa03a28469d8a
+          x-skaffolder-type: 1:m
+          x-skaffolder-ent1: 5f26a93d612fa03a28469d64
+          x-skaffolder-ent2: 5f26a98a612fa03a28469d6a
       required:
         - _id
         - Inhalt
